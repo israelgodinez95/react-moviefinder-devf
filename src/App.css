@@ -1,7 +1,7 @@
 * {
-    box-sizing: border-box;
+    /*box-sizing: border-box;
     outline: 1px solid limegreen;
-}
+*/}
 
 body {
     margin: 0;
@@ -17,4 +17,36 @@ body {
 
 .img-thumbnail{
 max-width: 20% !important;
+}
+
+#show-details{
+    background-color: rgb(229, 229, 229);
+    color: white;
+    margin: 20px;
+}
+
+footer p{
+    color: rgb(251, 251, 251) !important;
+}
+
+nav{
+height: 10%;
+padding-top: 0 !important;
+padding-bottom: 0 !important;
+}
+
+#home-div{
+    min-height: 75%;
+}
+
+footer{
+    height: 15%;
+}
+
+.card-body p{
+    color: rgb(4, 4, 4);
+}
+
+.card-body h5{
+    color: rgb(4, 4, 4);
 }

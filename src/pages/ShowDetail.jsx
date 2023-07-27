@@ -12,19 +12,18 @@ const ShowDetail = () => {
       .catch(err => console.error(err))
   }, [name])
   return (
-    <div className='card'>
+    <div id='show-details' className='card col-10 mx-auto'>
       <img
-        className='img-fluid img-thumbnail' src={show?.image.medium} alt='Card image cap'
+        className='img-fluid img-thumbnail mx-auto' src={show?.image.medium} alt='Card image cap'
       />
       <div className='card-body'>
         <h5 className='card-title'>Title: {show?.name}</h5>
         <p className='card-text'>Summary: {show?.summary}</p>
+        <p className='card-text'>Rating: {show?.rating.average}</p>
+        <p className='card-text'>Status: {show?.status}</p>
+        <p className='card-text'>Type: {show?.type}</p>
       </div>
-      <ul className='list-group list-group-flush'>
-        <li className='list-group-item'>Rating: {show?.rating.average}</li>
-        <li className='list-group-item'>Status: {show?.status}</li>
-        <li className='list-group-item'>Type: {show?.type}</li>
-      </ul>
+
     </div>
 
   )
