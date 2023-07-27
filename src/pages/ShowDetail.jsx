@@ -12,12 +12,19 @@ const ShowDetail = () => {
       .catch(err => console.error(err))
   }, [name])
   return (
-    <div className='main'>
-      <div className='card'>
-        <div className='card-header'>
-          <h3>{show?.name}</h3>
-        </div>
+    <div className='card'>
+      <img
+        className='img-fluid img-thumbnail' src={show?.image.medium} alt='Card image cap'
+      />
+      <div className='card-body'>
+        <h5 className='card-title'>Title: {show?.name}</h5>
+        <p className='card-text'>Summary: {show?.summary}</p>
       </div>
+      <ul className='list-group list-group-flush'>
+        <li className='list-group-item'>Rating: {show?.rating.average}</li>
+        <li className='list-group-item'>Status: {show?.status}</li>
+        <li className='list-group-item'>Type: {show?.type}</li>
+      </ul>
     </div>
 
   )

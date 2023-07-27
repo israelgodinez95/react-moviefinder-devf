@@ -4,7 +4,7 @@ import React from 'react'
 const Navbar = () => {
   return (
     <>
-      <nav className='navbar navbar-expand-sm navbar-dark bg-dark d-flex justify-content-between px-4 fixed-top'>
+      <nav className='navbar navbar-expand-sm navbar-dark bg-dark d-flex justify-content-between px-4'>
         <NavLink className='navbar-brand' to='/'>MovieFinder</NavLink>
         <button className='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarsExample02' aria-controls='navbarsExample02' aria-expanded='false' aria-label='Toggle navigation'>
           <span className='navbar-toggler-icon' />

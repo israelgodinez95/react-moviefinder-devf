@@ -21,7 +21,7 @@ const Home = () => {
     <>
       <div className='container'>
         <h1>Home</h1>
-        <form className='form-inline w-800'>
+        <form className='form-inline my-2 w-800'>
           <input
             type='text'
             className='form-control'
@@ -30,13 +30,12 @@ const Home = () => {
             onChange={handleSearch}
           />
         </form>
-        <div className='main row'>
+        <div className='row'>
           {shows.map(show => (
             <Show
               key={show.show.id}
               name={show.show.name}
               url={show.show.image?.medium}
-              summary={show.show.summary}
             />
           ))}
         </div>

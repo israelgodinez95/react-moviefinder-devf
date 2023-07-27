@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 const Show = ({ id, name, url, summary }) => {
   return (
     <>
-      <div id='main-card' className='col-3' key={id}>
+      <div className='col-4' key={id}>
         <div className='card'>
           <div className='card-body'>
             <img
@@ -15,12 +15,8 @@ const Show = ({ id, name, url, summary }) => {
               className='card-title'
               to={`/show/${name}`}
             >
-              {name}
+              <h2>{name}</h2>
             </Link>
-            <h5>{name}</h5>
-            <div id='summary'>
-              {summary}
-            </div>
           </div>
         </div>
       </div>
